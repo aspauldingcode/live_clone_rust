@@ -1,12 +1,13 @@
 [package]
 name = "live_clone_rust"
 version = "0.1.0"
-edition = "2021"
+edition = "2018"
+resolver = "2"
 
 [dependencies]
 cpal = "0.11"
 egui = "0.15"
-iced = "0.4"
+iced = { version = "0.5", features = ["wgpu"] }
 druid = "0.7"
 cocoa = "0.24"
 objc = { version = "0.2.7", features = ["exception"] }

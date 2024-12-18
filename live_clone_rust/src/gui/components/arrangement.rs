@@ -1,6 +1,6 @@
 use iced::{
-    widget::{Container, Text, Column},
-    Element, Length,
+    widget::Text,
+    Element,
 };
 use crate::gui::components::Component;
 
@@ -20,14 +20,8 @@ impl Component for ArrangementView {
         ArrangementView {}
     }
 
-    fn view(&mut self) -> Element<Message> {
-        Container::new(
-            Column::new()
-                .push(Text::new("Arrangement"))
-        )
-        .width(Length::Fill)
-        .height(Length::Fill)
-        .into()
+    fn view(&self) -> Element<Message> {
+        Text::new("Arrangement View").into()
     }
 
     fn update(&mut self, _message: Message) {

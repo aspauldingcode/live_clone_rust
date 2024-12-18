@@ -8,10 +8,11 @@ pub mod transport;
 
 use iced::Element;
 
+#[allow(dead_code)]
 pub trait Component {
     type Message;
 
     fn new() -> Self;
-    fn view(&mut self) -> Element<Self::Message>;
+    fn view(&self) -> Element<Self::Message>;
     fn update(&mut self, message: Self::Message);
 } 
