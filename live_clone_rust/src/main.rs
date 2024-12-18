@@ -4,5 +4,6 @@ use crate::gui::MainWindow;
 mod gui;
 
 fn main() {
-    let _ = MainWindow::run(Settings::default());
+    let settings = Settings::default();
+    MainWindow::run(settings).expect("Failed to run application");
 }
