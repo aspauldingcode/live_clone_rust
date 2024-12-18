@@ -1,1 +1,11 @@
-/target
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Editor directories
+.idea/
+.vscode/
+
+# Rust build directories
+/target/
+/live_clone_rust/target/
